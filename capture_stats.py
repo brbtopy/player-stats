@@ -48,6 +48,8 @@ try:
     appearances_cell = "B" + cell
     Player_Discipline_sheet[appearances_cell] = Goal_Involvement_sheet[appearances_cell] = appearances
 except ValueError:
+    appearances_cell = "B" + cell
+    Player_Discipline_sheet[appearances_cell] = Goal_Involvement_sheet[appearances_cell] = 0
     pass
 
 #UPDATING GENERAL INFO WORKSHEET
@@ -145,6 +147,8 @@ try:
     yellow_card_cell = "C" + cell
     Player_Discipline_sheet[yellow_card_cell] = int(yellow_card)
 except ValueError:
+    yellow_card_cell = "C" + cell
+    Player_Discipline_sheet[yellow_card_cell] = 0
     pass
 
 try:
@@ -152,6 +156,8 @@ try:
     red_card_cell = "D" + cell
     Player_Discipline_sheet[red_card_cell] = int(red_card)
 except ValueError:
+    red_card_cell = "D" + cell
+    Player_Discipline_sheet[red_card_cell] = 0
     pass
 
 print("\n[+] Done with Player Discipline Sheet. Moving on to Goal Involvement Sheet ... [+]\n")
@@ -163,6 +169,8 @@ try:
     goals_cell = "C" + cell
     Goal_Involvement_sheet[goals_cell] = int(goals)
 except ValueError:
+    goals_cell = "C" + cell
+    Goal_Involvement_sheet[goals_cell] = 0
     pass
 
 try:
@@ -170,6 +178,8 @@ try:
     assists_cell = "D" + cell
     Goal_Involvement_sheet[assists_cell] = int(assists)
 except ValueError:
+    assists_cell = "D" + cell
+    Goal_Involvement_sheet[assists_cell] = 0
     pass
 
 try:
@@ -177,6 +187,8 @@ try:
     penalties_att_cell = "E" + cell
     Goal_Involvement_sheet[penalties_att_cell] = int(penalties_att)
 except ValueError:
+    penalties_att_cell = "E" + cell
+    Goal_Involvement_sheet[penalties_att_cell] = 0
     pass
 
 try:
@@ -184,6 +196,8 @@ try:
     penalties_scored_cell = "F" + cell
     Goal_Involvement_sheet[penalties_scored_cell] = int(penalties_scored)
 except ValueError:
+    penalties_scored_cell = "F" + cell
+    Goal_Involvement_sheet[penalties_scored_cell] = 0
     pass
 
 print("\n[+] Done with Renaissance Player Inventory Workbook [+]")
