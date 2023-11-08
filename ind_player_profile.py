@@ -107,7 +107,7 @@ try:
     workbook.ActiveSheet.ExportAsFixedFormat(0, output)
     workbook.Close()
 
-  excl2pdf("C:\\Users\\samas\\Desktop\\proj\\player stats\\Indv. Player Profile.xlsx")
+  excl2pdf("C:\\Users\\samas\\Desktop\\proj\\rfc\\rfc-player-stats\\Indv. Player Profile.xlsx")
   print("[+] Done converting Excel to PDF [+]\n")
 
   os.chmod(filename, S_IREAD|S_IRGRP|S_IROTH)
@@ -125,7 +125,7 @@ try:
         'type': 'watermark',
         'image': 'logo',
         'width': '70%',
-        "opacity": 0.2
+        "opacity": 0.1
       }
     ]
   }
