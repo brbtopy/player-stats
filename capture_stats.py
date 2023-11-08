@@ -55,7 +55,7 @@ except ValueError:
 #UPDATING GENERAL INFO WORKSHEET
 #############################################################################################################
 dob = input(f"What is {player_name}'s date of birth? ")
-x = re.split("\s", dob)
+x = re.split(r"\s", dob)
 dob_new = x[0] + " " + x[1].title() + " " + x[2]
 dob_cell = "B" + cell
 General_Info_sheet[dob_cell] = dob_new
