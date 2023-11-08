@@ -36,6 +36,8 @@ def counter(directory):
     return count
 
 counter_file = "counters\\cell_counter.txt"
+os.chmod(counter_file, S_IWUSR|S_IREAD) # This makes the file read/write for the owner
+
 cell = counter(counter_file)
 
 name_cell = "A" + str(cell)
@@ -206,3 +208,4 @@ workbook.save(filename="Renaissance FC Player Inventory.xlsx")
 workbook.close()
 
 os.chmod(filename, S_IREAD|S_IRGRP|S_IROTH)
+os.chmod(counter_file, S_IREAD|S_IRGRP|S_IROTH)
